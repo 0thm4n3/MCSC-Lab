@@ -1,0 +1,20 @@
+Indicators of Compromise ( IOCs ) :
+
+HTTP requests :
+
+	- GET http://sceneconextion.net/jsk.zp ( if not 200 OK ) then
+	- GET http://83.217.26.44/php.log
+
+Commands Execution :
+
+	- ping 8.8.8.8 -n 250
+
+System :
+	
+	- Make a "body_response" file with .PmW extension under %appdata% directory
+	- Decode the actual downloaded payload ( which is under %appdata% directory ) and set it's extension to ( .RiW ).
+	- Call rundll32 on the ####.RiW file using DLLRegisterServer
+
+
+
+Resources : https://www.netskope.com/blog/nitol-botnet-makes-resurgence-evasive-sandbox-analysis-technique/
